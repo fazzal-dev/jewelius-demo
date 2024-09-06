@@ -8,9 +8,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: Instagram, href: "https://instagram.com/jewelius" },
-    { icon: Twitter, href: "https://twitter.com/jewelius" },
-    { icon: Youtube, href: "https://youtube.com/jewelius" },
+    { icon: Instagram, href: "#" },
+    { icon: Twitter, href: "#" },
+    { icon: Youtube, href: "#" },
     // { icon: Spotify, href: "https://open.spotify.com/artist/jewelius" },
   ];
 
@@ -58,7 +58,7 @@ const Footer = () => {
             </nav>
           </div>
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-xl font-semibold mb-4">Connect with Us</h3>
+            <h3 className="text-xl font-semibold mb-4">Connect with me</h3>
             <div className="flex space-x-4">
               {socialLinks.map((link) => (
                 <motion.a
