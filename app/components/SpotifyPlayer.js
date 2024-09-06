@@ -43,8 +43,8 @@ const SpotifyPlayer = () => {
 
   useEffect(() => {
     const fetchSpotifyToken = async () => {
-      const clientId = "ed3c5a597ed44fde8920876590143fc0";
-      const clientSecret = "da60ddc235a84d0198d466e3e37ea0fa";
+      const clientId = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_ID;
+      const clientSecret = process.env.NEXT_PUBLIC_SPOTIFY_CLIENT_SECRET;
       const tokenUrl = "https://accounts.spotify.com/api/token";
 
       const headers = {
